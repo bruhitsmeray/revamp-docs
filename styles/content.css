@@ -1,19 +1,31 @@
-article {
+article{
     text-indent: 24px;
 }
 
-code {
+p{
+    padding: 6px 0px;
+}
+
+code{
     background-color: rgb(48, 48, 48);
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     display: block;
     
     font-size: 12px;
     line-height: 2;
 
     margin: 6px 0px;
-    padding: 15px;
+    padding: 12px;
     position: relative;
+}
+
+code p{
+    padding: 0px;
+}
+
+section{
+    padding: 10px 0px;
 }
 
 .content{
@@ -35,7 +47,7 @@ body.dark .content{
     font-size: 24px;
 
     margin: 6px 0px;
-    padding: 10px 12px;
+    padding: 12px 14px;
     text-align: left;
 }
 
@@ -53,11 +65,24 @@ body.dark .content{
     padding: 10px;
 }
 
-.warning{
+.low-warning{
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+
+    font-size: 14px;
+    padding: 10px 8px;
+    margin: 10px 0px;
+}
+
+.high-warning{
     background-color: red;
+    border: 1px solid black;
     border-radius: 10px;
     color: white;
 
     font-size: 14px;
-    padding: 10px;
+    padding: 10px 8px;
+    margin: 10px 0px;
 }

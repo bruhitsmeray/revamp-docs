@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+    grid-area: nav;
+    padding: 20px 0% 20px 0;
+}
+
+.nav li, .nav a, .nav button{
+    color: rgb(40, 40, 40);
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+
+    text-decoration: none;
+}
+
+body.dark .nav li,
+body.dark .nav a,
+body.dark .nav button{
+    color: white;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav-links{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color: orangered;
+}
+
+/* NOTE: This is where the dark mode button code section starts. */
+
+.checkbox{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+
+.checkbox:checked + .label{
+    background-color: white;
+}
+
+.checkbox:checked + .label .ball{
+    background-color: rgb(40, 40, 40);
+    transform: translateX(32px);
+}
+
+.label{
+    align-items: center;
+    background-color: rgb(40, 40, 40);
+
+    border: none;
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    display: flex;
+    position: relative;
+
+    height: 30px;
+    width: 60px;
+
+    transition: all 0.3 ease 0s;
+}
+
+.ball{
+    background-color: white;
+    border-radius: 10px;
+
+    position: absolute;
+    left: 4px;
+    
+    height: 20px;
+    width: 20px;
+
+    transition: transform 0.2s linear;
+}
+
+/* NOTE: This is where the dark mode button code section end. */
+
+
+/* NOTE: This section is reserved for the message code. */
+
+.message{
+    color: white;
+    background:orangered;
+    border-radius: 10px;
+
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    
+}
+
+.message h3{
+    background: orangered;
+}
+
+.message a{
+    background: orangered;
+    color: white;
+    text-decoration: none;
+}
+
+/* This is where the message code section ends. */

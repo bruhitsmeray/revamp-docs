@@ -1,88 +1,70 @@
-article{
-    text-indent: 24px;
+article {
+  text-indent: 24px;
 }
 
-p{
-    padding: 6px 0px;
+p {
+  padding: 6px 0px;
 }
 
-code{
-    background-color: rgb(48, 48, 48);
-    color: white;
-    border-radius: 10px;
-    display: block;
-    
-    font-size: 12px;
-    line-height: 2;
+code {
+  background-color: rgb(45, 45, 45);
+  color: white;
 
-    margin: 6px 0px;
-    padding: 12px;
-    position: relative;
+  border-radius: 10px;
+  display: block;
+
+  font-size: 12px;
+  line-height: 2;
+
+  margin: 6px 0px;
+  padding: 12px;
+  position: relative;
 }
 
-code p{
-    padding: 0px;
+code p {
+  padding: 0px;
 }
 
-section{
-    padding: 10px 0px;
+section {
+  padding: 10px 0px;
 }
 
-.content{
-    grid-area: content;
+.content {
+  grid-area: content;
 }
 
-body.dark .content{
-    color: white;
+.content h2 {
+  background-color: var(--header-text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+
+  margin: 6px 0px;
+  padding: 12px 14px;
+  text-align: left;
 }
 
-.content h2{
-    background-color: white;
-    border: 1px solid black;
+.low-warning {
+  background-color: var(--l-warning-color);
+  border: 1px solid rgba(51, 51, 51, 0.4);
+  border-radius: 10px;
 
-    border-radius: 10px;
-    color: rgb(40, 40, 40);
+  color: white;
 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-
-    margin: 6px 0px;
-    padding: 12px 14px;
-    text-align: left;
+  font-size: 14px;
+  padding: 10px 0px;
+  margin: 10px 0px;
 }
 
-.content h3{
-    background-color: white;
-    border: 1px solid black;
+.high-warning {
+  background-color: var(--h-warning-color);
+  border: 1px solid rgba(51, 51, 51, 0.4);
+  border-radius: 10px;
+  color: white;
 
-    border-radius: 10px;
-    color: rgb(40, 40, 40);
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-
-    margin: 6px 0px;
-    padding: 10px;
-}
-
-.low-warning{
-    background-color: #ff7a21;
-    border: 1px solid black;
-    border-radius: 10px;
-    color: black;
-
-    font-size: 14px;
-    padding: 10px 8px;
-    margin: 10px 0px;
-}
-
-.high-warning{
-    background-color: #b01e13;
-    border: 1px solid black;
-    border-radius: 10px;
-    color: white;
-
-    font-size: 14px;
-    padding: 10px 8px;
-    margin: 10px 0px;
+  font-size: 14px;
+  padding: 10px 8px;
+  margin: 10px 0px;
 }

@@ -1,155 +1,187 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset = "utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title>whiteex / docs</title>
-        <link rel="icon" href="assets/logo.png">
-        <link rel="stylesheet" href="./styles/navbar.css">
-        <link rel="stylesheet" href="./styles/sidebar.css">
-        <link rel="stylesheet" href="./styles/style.css">
-        <link rel="stylesheet" href="./styles/content.css">
-    </head>
-    <body>
-        <div class="container">
-            <header class="nav">
-                <a href="index.html" class="logo">whiteex</a>
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="https://dev-whiteex.github.io/" target="_blank">Home</a></li>
-                        <li><a href="https://ko-fi.com/whiteex" target="_blank">Buy me a coffee</a></li>
-                        <li><a href="https://github.com/dev-whiteex" target="_blank">Github</a></li>
-                    </ul>
-                </nav>
-                <input type="checkbox" class="checkbox" id="checkbox" checked>
-                <label for="checkbox" class="label"><div class="ball"></div></label>
-            </header>
-            <div class="message">
-                <h3><a href="https://discord.com/oauth2/authorize?client_id=772944646195511297&scope=bot&permissions=2129853695" target="_blank">Eutera 4.5.2 is now available.</a></h3>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-            <aside class="side">
-                <div class="side-content">
-                    <ul class="side-links">
-                        <li><a href="#Intro">Introduction</a></li>
-                        <li><a href="#Aleph">Aleph</a></li>
-                        <ul class="side-sub-links">
-                            <li><a href="#Setup">➥ Setup</a></li>
-                            <li><a href="#Instance">➥ Instance</a></li>
-                            <li><a href="#Character">➥ Player Character</a></li>
-                            <li><a href="#HUD">➥ Heads-Up Display</a></li>
-                            <li><a href="#Notifications">➥ Notifications</a></li>
-                        </ul>
-                        <li><a href="#Console">conSole</a></li>
-                        <li><a href="#Subs">SubX</a></li>
-                        <li><a href="#Vitals">VitalX</a></li>
-                        <li><a href="#Wiman">WiMan</a> </li>
-                    </ul>
-                </div>
-            </aside>
+    <title>whiteex / docs</title>
+    <link rel="icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/sidebar.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/content.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="nav">
+        <a href="index.html" class="logo">whiteex</a>
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <a href="https://dev-whiteex.github.io/" target="_blank">Home</a>
+            </li>
+            <li>
+              <a href="https://ko-fi.com/whiteex" target="_blank"
+                >Buy me a coffee</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/dev-whiteex" target="_blank"
+                >Github</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <input type="checkbox" class="checkbox" id="checkbox" checked />
+        <label for="checkbox" class="label"><div class="ball"></div></label>
+      </header>
+      <div class="message">
+        <h3>
+          <a
+            href="https://discord.com/oauth2/authorize?client_id=772944646195511297&scope=bot&permissions=2129853695"
+            target="_blank"
+            >Eutera 4.5.2 is now available.</a
+          >
+        </h3>
+      </div>
 
-            <div class="content">
-                <section id="Intro">
-                    <h2>Introduction</h2>
-                    <article>
-                        <p>
-                            Welcome to the documentation page. Here you can find useful information about many of my projects,
-                            you'll find information about the Aleph framework, conSole (plugin) & WiMan (plugin).
-                        </p>
-                    </article>
-                </section>
-                <section id="Aleph">
-                    <h2>Aleph</h2>
-                    <article>
-                        <p class="high-warning">
-                            The following sections of the documentation represents the Aleph framework and it's code as they function on
-                            an upcoming build based on Unreal Engine 4.27.2!
-                        </p>        
-                        <p>Aleph is a former learning project, that now grows up to be a framework for my future game projects.
-                            I intend to share this base with you, so I find it necessary to leave you some documentation too.
-                        </p>                            
-                    </article>
-                </section>
-                <section id="Setup">
-                    <h2>Setup</h2>
-                    <article>
-                        <p class="low-warning">This section is incomplete.</p>
-                        <p>
-                            First things first, please take note that if you intend to use this plugin on a Singleplayer project, you don't need to do any of this.
-                            This setup is needed for people that want to use the plugin in a multiplayer project or a single player project with online capabilities.
-                        </p>
-                        <p class="high-warning">If you intend to use this plugin on any Online capable project and don't do the setup, the project might crash.</p>
-                    </article>
-                </section>
-                <section id="Instance">
-                    <h2>Instance</h2>
-                    <article>
-                        <p class="low-warning">Article not available!</p>
-                    </article>
-                </section>
-                <section id="Character">
-                    <h2>Player Character</h2>
-                    <article>
-                        <p class="low-warning">Article not available!</p>
-                    </article>
-                </section>
-                <section id="HUD">
-                    <h2>Heads-Up Display</h2>
-                    <article>
-                        <p>The HUD has skin support. A skin is a fancy way of saying "you have the option to switch between multiple styles
-                            of hud". By default, the HUD found in the plugin comes with the following skin options:
-                        </p>
-                        <code>
-                            <p>Off</p>
-                            <p>Default</p>
-                            <p>Classic</p>
-                        </code>
-                        <p>More skins can be added by the user inside the plugin's code.</p>
-                    </article>
-                </section>
-                <section id="Notifications">
-                    <h2>Notifications</h2>
-                    <article>
-                        <p class="low-warning">Article not available!</p>
-                    </article>
-                </section>
-                <section id="Console">
-                    <h2>conSole</h2>
-                    <article>
-                        <p class="low-warning">Article not available!</p>
-                        <p class="high-warning">This plugin will not work without WiMan being installed inside the project or engine folder
-                            as WiMan provides various window functions to the console.
-                        </p>
-                    </article>
-                </section>
-                <section id="Subs">
-                    <h2>SubX</h2>
-                    <article>
-                        <p class="low-warning">Article not available!</p>
-                    </article>
-                </section>
-                <section id="Vitals">
-                    <h2>VitalX</h2>
-                    <article>
-                        <p class="low-warning">Article not available!</p>
-                    </article>
-                </section>
-                <section id="Wiman">
-                    <h2>WiMan</h2>
-                    <article>
-                        <p class="low-warning">Article not available!</p>
-                    </article>
-                </section>
-            </div>
-
-            <footer class = "bg_light">
-                <p>&copy;whiteex</p>
-                <p>2022</p>
-            </footer>
+      <aside class="side">
+        <div class="side-content">
+          <ul class="side-links">
+            <li><a href="#Intro">Introduction</a></li>
+            <li><a href="#Aleph">Aleph</a></li>
+            <ul class="side-sub-links">
+              <li><a href="#Setup">➥ Setup</a></li>
+              <li><a href="#Instance">➥ Instance</a></li>
+              <li><a href="#Character">➥ Player Character</a></li>
+              <li><a href="#HUD">➥ Heads-Up Display</a></li>
+              <li><a href="#Notifications">➥ Notifications</a></li>
+            </ul>
+            <li><a href="#Console">conSole</a></li>
+            <li><a href="#Subs">SubX</a></li>
+            <li><a href="#Vitals">VitalX</a></li>
+            <li><a href="#Wiman">WiMan</a></li>
+          </ul>
         </div>
+      </aside>
 
-        <script src="scripts/jquery.js"></script>
-        <script src="scripts/preferences/dark.js" type="module"></script>
-    </body>
+      <div class="content">
+        <section id="Intro">
+          <h2>Introduction</h2>
+          <article>
+            <p>
+              Welcome to the documentation page. Here you can find useful
+              information about many of my projects, you'll find information
+              about the Aleph framework, conSole (plugin) & WiMan (plugin).
+            </p>
+          </article>
+        </section>
+        <section id="Aleph">
+          <h2>Aleph</h2>
+          <article>
+            <p class="high-warning">
+              The following sections of the documentation represents the Aleph
+              framework and it's code as they function on an upcoming build
+              based on Unreal Engine 4.27.2!
+            </p>
+            <p>
+              Aleph is a former learning project, that now grows up to be a
+              framework for my future game projects. I intend to share this base
+              with you, so I find it necessary to leave you some documentation
+              too.
+            </p>
+          </article>
+        </section>
+        <section id="Setup">
+          <h2>Setup</h2>
+          <article>
+            <p class="low-warning">This section is incomplete.</p>
+            <p>
+              First things first, please take note that if you intend to use
+              this plugin on a Singleplayer project, you don't need to do any of
+              this. This setup is needed for people that want to use the plugin
+              in a multiplayer project or a single player project with online
+              capabilities.
+            </p>
+            <p class="high-warning">
+              If you intend to use this plugin on any Online capable project and
+              don't do the setup, the project might crash.
+            </p>
+          </article>
+        </section>
+        <section id="Instance">
+          <h2>Instance</h2>
+          <article>
+            <p class="low-warning">Article not available!</p>
+          </article>
+        </section>
+        <section id="Character">
+          <h2>Player Character</h2>
+          <article>
+            <p class="low-warning">Article not available!</p>
+          </article>
+        </section>
+        <section id="HUD">
+          <h2>Heads-Up Display</h2>
+          <article>
+            <p>
+              The HUD has skin support. A skin is a fancy way of saying "you
+              have the option to switch between multiple styles of hud". By
+              default, the HUD found in the plugin comes with the following skin
+              options:
+            </p>
+            <code>
+              <p>Off</p>
+              <p>Default</p>
+              <p>Classic</p>
+            </code>
+            <p>More skins can be added by the user inside the plugin's code.</p>
+          </article>
+        </section>
+        <section id="Notifications">
+          <h2>Notifications</h2>
+          <article>
+            <p class="low-warning">Article not available!</p>
+          </article>
+        </section>
+        <section id="Console">
+          <h2>conSole</h2>
+          <article>
+            <p class="low-warning">Article not available!</p>
+            <p class="high-warning">
+              This plugin will not work without WiMan being installed inside the
+              project or engine folder as WiMan provides various window
+              functions to the console.
+            </p>
+          </article>
+        </section>
+        <section id="Subs">
+          <h2>SubX</h2>
+          <article>
+            <p class="low-warning">Article not available!</p>
+          </article>
+        </section>
+        <section id="Vitals">
+          <h2>VitalX</h2>
+          <article>
+            <p class="low-warning">Article not available!</p>
+          </article>
+        </section>
+        <section id="Wiman">
+          <h2>WiMan</h2>
+          <article>
+            <p class="low-warning">Article not available!</p>
+          </article>
+        </section>
+      </div>
+
+      <footer class="bg_light">
+        <p>&copy;whiteex</p>
+        <p>2022</p>
+      </footer>
+    </div>
+
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/preferences/themeHandler.js" type="module"></script>
+  </body>
 </html>

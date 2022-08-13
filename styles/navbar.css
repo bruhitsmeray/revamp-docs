@@ -117,3 +117,9 @@
 }
 
 /* This is where the message code section ends. */
+
+@media screen and (min-width: 240px) and (max-width: 960px) and (orientation: portrait) {
+  .nav-links {
+    display: none;
+  }
+}
